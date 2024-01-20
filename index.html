@@ -12,32 +12,34 @@
 </head>
 <body class="font-sans h-screen flex items-center justify-center bg-slate-100">
   <div>
+    <form class="flex space-x-4">
+      <label for="day"><span class="text-xs">DAY</span> 
+        <p><input class="inline-block w-24 placeholder:font-bold p-1 text-center border rounded-md" type="text" name="day" id="day" placeholder="DD" ></p>
+      </label>
+      <label for="month"> <span class="text-xs">MONTH</span>
+        <p><input class="inline-block w-24 placeholder:font-bold p-1 text-center border rounded-md" type="text" name="month" id="month" placeholder="MM"></p>
+      </label>
+      <label for="year"> <span class="text-xs">YEAR</span> 
+        <p><input class="inline-block w-24 placeholder:font-bold p-1 text-center border rounded-md" type="text" name="year" id="year" placeholder="YY"></p>
+      </label>
+    </form>
+
     <div class="relative my-7">
       <div class="h-0.5 bg-slate-200 mt-1"></div>
-      <img class="bg-blue-500 rounded-full p-2 absolute right-0 -top-5 w-10 h-10" src="./assets/images/icon-arrow.svg" alt="icon arrow svg">
+      <img class="bg-purple-600 rounded-full p-2 absolute right-0 -top-5 w-10 h-10" src="./assets/images/icon-arrow.svg" alt="icon arrow svg">
     </div>
 
+    <div>
+      <p class="font-bold text-4xl"><span class="text-purple-600 text-7xl">--</span> Months</p>
+      <p class="font-bold text-4xl"><span class="text-purple-600 text-7xl">--</span> Years</p>
+      <p class="font-bold text-4xl"><span class="text-purple-600 text-7xl">--</span> Days</p>
+    </div>
 
-    <div class="attribution">
+    <!-- <div class="attribution mt-6">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">&copy;AneziJane</a>.
-    </div>
+    </div> -->
   </div>
-  <!-- Day
-  DD
-
-  Month
-  MM
-
-  Year
-  YYYY -->
-
-  
-
-  <!-- -- years
-  -- months
-  -- days
-   -->
   
 </body>
 </html>
