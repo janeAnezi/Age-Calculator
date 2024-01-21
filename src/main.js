@@ -19,8 +19,7 @@ showDate.addEventListener('click', (e)=> {
     let dayValue = parseInt(day.value,10); // to get the value in the input
     let monthValue =parseInt(month.value,10);
     let yearValue = parseInt(year.value,10);
-
-     //console.log(dayValue);
+    //console.log(dayValue);
 
     // to Get current date
     var currentDate = new Date();
@@ -30,6 +29,7 @@ showDate.addEventListener('click', (e)=> {
 
     // Calculate the difference in milliseconds
     var dateDifference = currentDate - enteredDate;
+    //console.log(dateDifference);
 
     // Convert milliseconds to years, months, and days
     var years = Math.floor(dateDifference / (365.25 * 24 * 60 * 60 * 1000));
