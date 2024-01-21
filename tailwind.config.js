@@ -5,7 +5,14 @@ module.exports = {
     "./index.html"
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      'sans': ['ui-sans-serif', 'system-ui'],
+      'serif': ['ui-serif', 'Georgia'],
+      'mono': ['ui-monospace', 'SFMono-Regular'],
+      'poppins': ['Poppins', 'sans-serif'],
+      'display': ['Oswald'],
+      'body': ['"poppins"'],
+    }
   },
   plugins: [],
 }
