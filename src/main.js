@@ -68,7 +68,9 @@ showDate.addEventListener('click', (e)=> {
            displayError(year, yearLabel);
         }
     }
- 
+    let age = {'years': years.valueOf(years), 'months': months.valueOf(days), 'days': days.valueOf(days)};
+     console.log(age);
+    localStorage.setItem('Guest', age);
 
      day.value = ''; // to clear the value in the input box
      month.value = ''; 
