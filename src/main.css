@@ -750,6 +750,11 @@ video {
   font-weight: 700;
 }
 
+.active\:bg-slate-950:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 6 23 / var(--tw-bg-opacity));
+}
+
 @media (min-width: 375px) {
   .sm\:right-48 {
     right: 12rem;
