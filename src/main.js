@@ -56,7 +56,11 @@ showDate.addEventListener('click', (e)=> {
 
      // Check if day, month, and year are valid
     {
-        if (dayValue >= 1 && dayValue <= 31) {
+        if(day.value.trim() === '') {
+            // Input is empty
+            errorDay.innerHTML = "This field is required";
+            displayError(day, dayLabel);
+        } else if(dayValue >= 1 && dayValue <= 31) {
             displayDay.innerHTML = days.valueOf(days);
             errorDay.innerHTML = '';
             clearError(day, dayLabel);
@@ -66,7 +70,11 @@ showDate.addEventListener('click', (e)=> {
         }
     }
     {
-        if (monthValue >= 1 && monthValue <= 12) {
+        if(month.value.trim() === '') {
+            // Input is empty
+            errorMonth.innerHTML = "This field is required";
+            displayError(month, monthLabel);
+        } else if (monthValue >= 1 && monthValue <= 12) {
             displayMonth.innerHTML = months.valueOf(days);
             errorMonth.innerHTML = '';
             clearError(month, monthLabel);
@@ -76,7 +84,11 @@ showDate.addEventListener('click', (e)=> {
         }
     }
     {
-        if (yearValue >= 1900 && yearValue <= 2024) {
+        if(year.value.trim() === '') {
+            // Input is empty
+            errorYear.innerHTML = "This field is required";
+            displayError(year, yearLabel);
+        } else if (yearValue >= 1900 && yearValue <= 2024) {
             displayYear.innerHTML = years.valueOf(years);
             errorYear.innerHTML = '';
             clearError(year, yearLabel);
@@ -102,9 +114,5 @@ function displayError(value, label) {
 function clearError(value, label) {
     label.classList.remove('text-red-500');
     value.classList.remove('border-red-500')
-}
-function requiredField() {
-    errorDay.innerHTML = "This field is required";
-    displayError(day, dayLabel);
 }
 

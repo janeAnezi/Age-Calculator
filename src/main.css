@@ -806,6 +806,18 @@ video {
     right: 35%;
   }
 
+  .sm\:right-\[25\%\] {
+    right: 25%;
+  }
+
+  .sm\:right-\[15\%\] {
+    right: 15%;
+  }
+
+  .sm\:right-\[20\%\] {
+    right: 20%;
+  }
+
   .sm\:mx-9 {
     margin-left: 2.25rem;
     margin-right: 2.25rem;
