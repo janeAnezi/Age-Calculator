@@ -108,13 +108,3 @@ function requiredField() {
     displayError(day, dayLabel);
 }
 
-// function inputContent() {
-//     // Check if any of the input values are empty
-//     if (isNaN(day.Value)) {
-//         requiredField();
-//       } else if (isNaN(month.Value)) {
-//         requiredField();
-//       } else if (isNaN(year.Value)) {
-//         requiredField();
-//       }
-// }
