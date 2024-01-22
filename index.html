@@ -11,27 +11,27 @@
   
 </head>
 <body class="font-poppins h-screen flex items-center justify-center bg-slate-100">
-  <div class="bg-white pl-5 pr-24 py-5 rounded-lg rounded-br-[99px]">
+  <div class="min-w-[375px] bg-white pl-5 pr-24 sm:mx-9 py-5 rounded-lg rounded-br-[99px]">
     <form>
-      <div class="flex space-x-4">
+      <div class="flex flex-wrap space-x-4">
         <label for="day"><span id="label-day" class="text-xs text-gray-500">DAY</span> 
-          <p><input id="day" class=" inline-block w-24 placeholder:font-bold p-1 text-center border rounded-md" type="text" name="day"  placeholder="DD"  required ></p>
+          <p><input id="day" class=" inline-block lg:w-24 sm:w-[70px] placeholder:font-bold p-1 text-center border rounded-md" type="text" name="day"  placeholder="DD"  required ></p>
           <p id="day-result" class="text-xs text-red-500"></p>
         </label>
         <label for="month"><span id="label-month" class="text-xs text-gray-500" >MONTH</span>
-          <p><input id="month" class="inline-block w-24 placeholder:font-bold p-1 text-center border rounded-md" type="text" name="month"  placeholder="MM"  required></p>
+          <p><input id="month" class="inline-block lg:w-24 sm:w-[70px] placeholder:font-bold p-1 text-center border rounded-md" type="text" name="month"  placeholder="MM"  required></p>
           <p id="month-result" class="text-xs text-red-500"></p>
         </label>
         <label for="year"><span id="label-year" class="text-xs text-gray-500">YEAR</span> 
-          <p><input id="year" class="inline-block w-24 placeholder:font-bold p-1 text-center border rounded-md" type="text" name="year" placeholder="YYYY"  required></p>
+          <p><input id="year" class="inline-block lg:w-24 sm:w-[70px] placeholder:font-bold p-1 text-center border rounded-md" type="text" name="year" placeholder="YYYY"  required></p>
           <p id="year-result" class="text-xs text-red-500"></p>
         </label>
       </div>
       
 
       <div class="relative my-7">
-        <div class="h-0.5 bg-slate-200 mt-1 inline-block w-96"></div>
-        <img id="img" class="bg-purple-600 rounded-full p-2 absolute right-0 -top-1 w-10 h-10 cursor-pointer" src="./assets/images/icon-arrow.svg" alt="icon arrow svg">
+        <div class="h-0.5 bg-slate-200 mt-1 inline-block w-96 sm:w-80"></div>
+        <img id="img" class="bg-purple-600 rounded-full p-2 absolute sm:right-[35%] lg:right-0 -top-1 w-10 h-10 cursor-pointer " src="./assets/images/icon-arrow.svg" alt="icon arrow svg">
       </div>
       
     </form>
