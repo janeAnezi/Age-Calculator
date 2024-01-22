@@ -14,6 +14,23 @@ let showDate = document.getElementById('img')
 let dayLabel = document.getElementById('label-day')
 let monthLabel = document.getElementById('label-month')
 let yearLabel = document.getElementById('label-year')
+
+//for light mode darkmode toggle buttom 
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleButton = document.getElementById('togglebtn');
+    const body = document.body;
+  
+    toggleButton.addEventListener('click', function () {
+      // Toggle between 'light-mode' and 'dark-mode' classes on the body
+      body.classList.toggle('light-mode');
+      body.classList.toggle('dark-mode');
+  
+      // Toggle the position of the inner circle for visual indication
+      const innerCircle = toggleButton.querySelector('.inner-circle');
+      innerCircle.classList.toggle('dark-mode');
+    });
+  });
+  
 showDate.addEventListener('click', (e)=> {
     e.preventDefault(); // to prevent default form submission
     let dayValue = parseInt(day.value,10); // to get the value in the input
