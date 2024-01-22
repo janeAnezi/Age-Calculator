@@ -564,6 +564,30 @@ video {
   top: 10rem;
 }
 
+.top-20 {
+  top: 5rem;
+}
+
+.right-\[30\%\] {
+  right: 30%;
+}
+
+.right-\[25\%\] {
+  right: 25%;
+}
+
+.right-\[20\%\] {
+  right: 20%;
+}
+
+.top-16 {
+  top: 4rem;
+}
+
+.right-16 {
+  right: 4rem;
+}
+
 .my-7 {
   margin-top: 1.75rem;
   margin-bottom: 1.75rem;
@@ -816,6 +840,18 @@ video {
 
   .sm\:right-\[20\%\] {
     right: 20%;
+  }
+
+  .sm\:top-32 {
+    top: 8rem;
+  }
+
+  .sm\:top-28 {
+    top: 7rem;
+  }
+
+  .sm\:right-\[18\%\] {
+    right: 18%;
   }
 
   .sm\:mx-9 {
