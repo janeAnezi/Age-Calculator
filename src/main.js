@@ -15,7 +15,7 @@ let dayLabel = document.getElementById('label-day')
 let monthLabel = document.getElementById('label-month')
 let yearLabel = document.getElementById('label-year')
 
-//for light mode darkmode toggle buttom 
+// for light and darkmode toggle buttom 
 document.addEventListener('DOMContentLoaded', function () {
     const toggleButton = document.getElementById('togglebtn');
     const body = document.body;
@@ -33,13 +33,14 @@ document.addEventListener('DOMContentLoaded', function () {
   
 showDate.addEventListener('click', (e)=> {
     e.preventDefault(); // to prevent default form submission
-    let dayValue = parseInt(day.value,10); // to get the value in the input
-    let monthValue =parseInt(month.value,10);
-    let yearValue = parseInt(year.value,10);
+    let dayValue = day.value; // to get the value in the input
+    let monthValue =month.value;
+    let yearValue = year.value;
     //console.log(dayValue);
 
     // to Get current date
     var currentDate = new Date();
+    //console.log(currentDate);
 
     // to Create a date object with the entered date
     var enteredDate = new Date(yearValue, monthValue - 1, dayValue);
@@ -70,6 +71,7 @@ showDate.addEventListener('click', (e)=> {
         }
     }
     {
+        // 
         if(month.value.trim() === '') {
             // Input is empty
             errorMonth.innerHTML = "This field is required";
@@ -84,26 +86,32 @@ showDate.addEventListener('click', (e)=> {
         }
     }
     {
+        // for year
         if(year.value.trim() === '') {
             // Input is empty
             errorYear.innerHTML = "This field is required";
             displayError(year, yearLabel);
-        } else if (yearValue >= 1900 && yearValue <= 2024) {
+        } else if (yearValue >= 1900 && yearValue <= 2025) {
             displayYear.innerHTML = years.valueOf(years);
             errorYear.innerHTML = '';
-            clearError(year, yearLabel);
         } else {
             errorYear.innerHTML = "must be a valid year";
            displayError(year, yearLabel);
         }
     }
-    let age = {'years': years.valueOf(years), 'months': months.valueOf(days), 'days': days.valueOf(days)};
-     console.log(age);
-    localStorage.setItem('Guest', age);
+    let isValid = "20";
+    if(dayValue === isValid && monthValue === isValid && yearValue === isValid) {
+        let age = {'years': years.valueOf(years), 'months': months.valueOf(days), 'days': days.valueOf(days)};
+        console.log(age);
+        localStorage.setItem('Guest', age);
+    }
 
-     day.value = ''; // to clear the value in the input box
-     month.value = ''; 
-     year.value = ''; 
+    
+
+    // to be removed
+    //  day.value = ''; // to clear the value in the input box
+    //  month.value = ''; 
+    //  year.value = ''; 
 
 })
 

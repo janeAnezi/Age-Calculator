@@ -64,8 +64,8 @@ To see how you can add code snippets, see below:
 <h1>Some HTML code I'm proud of</h1>
 ```
 ```css
-tailwind css animation animate
-placeholder styling placeholder:font-bold
+tailwind css animation animate (jane)
+placeholder styling placeholder:font-bold (jane)
 
 customising css theme
 exports.theme: {
