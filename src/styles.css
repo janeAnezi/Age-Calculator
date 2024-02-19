@@ -8,6 +8,6 @@
   }
   
   .dark-mode {
-    background-image: linear-gradient(rgb(57, 54, 54), grey, rgb(81, 72, 72));
+    background-image: linear-gradient(rgb(1, 1, 1), grey, rgb(81, 72, 72));
     color: #171616;
   }

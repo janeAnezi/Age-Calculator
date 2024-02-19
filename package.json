@@ -1,5 +1,11 @@
 {
-  "devDependencies": {
-    "tailwindcss": "^3.4.1"
-  }
+  "name": "age-calculator",
+  "version": "1.0.0",
+  "description": "This is a solution to the [Age calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q). \r ## Table of contents",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }
