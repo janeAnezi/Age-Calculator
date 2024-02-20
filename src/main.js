@@ -65,7 +65,7 @@ showDate.addEventListener('click', (e)=> {
             errorDay.innerHTML = '';
             clearError(day, dayLabel);
         } else {
-            errorDay.innerHTML = "must be a valid day";
+            errorDay.innerHTML = "Must be a valid day";
            displayError(day, dayLabel);
         }
     }
@@ -79,7 +79,7 @@ showDate.addEventListener('click', (e)=> {
             errorMonth.innerHTML = '';
             clearError(month, monthLabel);
         } else {
-            errorMonth.innerHTML = "must be a valid month";
+            errorMonth.innerHTML = "Must be a valid month";
            displayError(month, monthLabel);
         }
     }
@@ -93,7 +93,7 @@ showDate.addEventListener('click', (e)=> {
             errorYear.innerHTML = '';
             clearError(year, yearLabel);
         } else {
-            errorYear.innerHTML = "must be a valid year";
+            errorYear.innerHTML = "Must be a valid year";
            displayError(year, yearLabel);
         }
     }

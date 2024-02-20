@@ -11,3 +11,18 @@
     background-image: linear-gradient(rgb(1, 1, 1), grey, rgb(81, 72, 72));
     color: #171616;
   }
+
+  .smaller-text{
+font-size: 7px;
+font-weight: bold;
+letter-spacing: 2px;
+
+  }
+
+  .small-text{
+    font-size: 6px;
+    color: red;
+    font-style: italic;
+    margin-top: 3px;
+    letter-spacing: 0.85px;
+  }

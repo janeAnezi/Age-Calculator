@@ -585,14 +585,6 @@ video {
   display: flex;
 }
 
-.h-0 {
-  height: 0px;
-}
-
-.h-0\.5 {
-  height: 0.125rem;
-}
-
 .h-10 {
   height: 2.5rem;
 }
@@ -681,9 +673,13 @@ video {
   border-width: 1px;
 }
 
-.bg-green-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
+.border-t {
+  border-top-width: 1px;
+}
+
+.border-gray-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
 .bg-lime-600 {
@@ -691,9 +687,9 @@ video {
   background-color: rgb(101 163 13 / var(--tw-bg-opacity));
 }
 
-.bg-orange-500 {
+.bg-purple-600 {
   --tw-bg-opacity: 1;
-  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
+  background-color: rgb(147 51 234 / var(--tw-bg-opacity));
 }
 
 .bg-slate-100 {
@@ -716,10 +712,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.p-1 {
-  padding: 0.25rem;
-}
-
 .p-2 {
   padding: 0.5rem;
 }
@@ -737,8 +729,8 @@ video {
   padding-right: 6rem;
 }
 
-.text-center {
-  text-align: center;
+.text-left {
+  text-align: left;
 }
 
 .text-5xl {
@@ -746,13 +738,12 @@ video {
   line-height: 1;
 }
 
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
 .font-bold {
   font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
 }
 
 .italic {
@@ -764,19 +755,9 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.text-gray-500 {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
-}
-
 .text-purple-600 {
   --tw-text-opacity: 1;
   color: rgb(147 51 234 / var(--tw-text-opacity));
-}
-
-.text-red-500 {
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .light-mode {
@@ -787,6 +768,20 @@ video {
 .dark-mode {
   background-image: linear-gradient(rgb(1, 1, 1), grey, rgb(81, 72, 72));
   color: #171616;
+}
+
+.smaller-text{
+  font-size: 7px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.small-text{
+  font-size: 6px;
+  color: red;
+  font-style: italic;
+  margin-top: 3px;
+  letter-spacing: 0.85px;
 }
 
 .placeholder\:font-bold::-moz-placeholder {
@@ -803,8 +798,8 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:right-\[35\%\] {
-    right: 35%;
+  .sm\:right-\[-20\%\] {
+    right: -20%;
   }
 
   .sm\:mx-9 {
