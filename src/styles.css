@@ -11,3 +11,11 @@
     background-image: linear-gradient(rgb(57, 54, 54), grey, rgb(81, 72, 72));
     color: #171616;
   }
+
+
+
+  #YYY::placeholder {
+    font-style: italic;
+    font-size: 14px; /* Adjust the font size as needed */
+  }
+  

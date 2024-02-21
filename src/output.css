@@ -813,6 +813,7 @@ video {
 @media (min-width: 640px) {
   .sm\:right-\[35\%\] {
     right: 35%;
+    
   }
 
   .sm\:mx-9 {
@@ -826,7 +827,12 @@ video {
 
   .sm\:w-\[70px\] {
     width: 70px;
+
+    
   }
+
+
+
 }
 
 @media (min-width: 1024px) {

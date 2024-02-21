@@ -6,6 +6,12 @@ let displayYear = document.getElementById('displayYear')
 let displayMonth = document.getElementById('displayMonth')
 let displayDay = document.getElementById('displayDay')
 
+
+    
+    
+
+
+
 let errorDay = document.getElementById('day-result')
 let errorMonth = document.getElementById('month-result')
 let errorYear = document.getElementById('year-result')
@@ -54,19 +60,24 @@ showDate.addEventListener('click', (e)=> {
     var days = Math.floor((dateDifference % (30.44 * 24 * 60 * 60 * 1000)) / (24 * 60 * 60 * 1000));
 
 
+    
+
+
      // Check if day, month, and year are valid
     {
         if(day.value.trim() === '') {
             // Input is empty
-            errorDay.innerHTML = "This field is required";
+            errorDay.innerHTML = "This field is required" ;
             displayError(day, dayLabel);
         } else if(dayValue >= 1 && dayValue <= 31) {
             displayDay.innerHTML = days.valueOf(days);
             errorDay.innerHTML = '';
             clearError(day, dayLabel);
         } else {
-            errorDay.innerHTML = "must be a valid day";
+            errorDay.innerHTML = "Must be a valid day";
            displayError(day, dayLabel);
+
+            
         }
     }
     {
@@ -79,9 +90,11 @@ showDate.addEventListener('click', (e)=> {
             errorMonth.innerHTML = '';
             clearError(month, monthLabel);
         } else {
-            errorMonth.innerHTML = "must be a valid month";
+            errorMonth.innerHTML = "Must be a valid month";
            displayError(month, monthLabel);
+           
         }
+
     }
     {
         if(year.value.trim() === '') {
@@ -93,7 +106,7 @@ showDate.addEventListener('click', (e)=> {
             errorYear.innerHTML = '';
             clearError(year, yearLabel);
         } else {
-            errorYear.innerHTML = "must be a valid year";
+            errorYear.innerHTML = "Must be a valid year";
            displayError(year, yearLabel);
         }
     }
