@@ -101,7 +101,7 @@ showDate.addEventListener('click', (e)=> {
             // Input is empty
             errorYear.innerHTML = "This field is required";
             displayError(year, yearLabel);
-        } else if (yearValue >= 1900 && yearValue <= 2024) {
+        } else if (yearValue >= 1900 && yearValue <= 2025) {
             displayYear.innerHTML = years.valueOf(years);
             errorYear.innerHTML = '';
             clearError(year, yearLabel);
