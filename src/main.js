@@ -46,6 +46,7 @@ showDate.addEventListener('click', (e)=> {
 
     // to Get current date
     var currentDate = new Date();
+  
 
     // to Create a date object with the entered date
     var enteredDate = new Date(yearValue, monthValue - 1, dayValue);
@@ -101,7 +102,7 @@ showDate.addEventListener('click', (e)=> {
             // Input is empty
             errorYear.innerHTML = "This field is required";
             displayError(year, yearLabel);
-        } else if (yearValue >= 1900 && yearValue <= 2025) {
+        } else if (yearValue >= 1900 && yearValue < 2025) {
             displayYear.innerHTML = years.valueOf(years);
             errorYear.innerHTML = '';
             clearError(year, yearLabel);
