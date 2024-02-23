@@ -115,9 +115,9 @@ showDate.addEventListener('click', (e)=> {
      console.log(age);
     localStorage.setItem('Guest', age);
 
-     day.value = ''; // to clear the value in the input box
-     month.value = ''; 
-     year.value = ''; 
+    //  day.value = ''; // to clear the value in the input box
+    //  month.value = ''; 
+    //  year.value = ''; 
 
 })
 
