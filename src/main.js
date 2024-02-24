@@ -105,7 +105,7 @@ showDate.addEventListener('click', (e)=> {
 
     let isValidDate = true;
     if (!isNaN(yearValue) && !isNaN(dayValue) && !isNaN(monthValue)){
-            if ((dayValue > 31 || dayValue < 1) || (monthValue  > 12 || monthValue < 1)) {
+            if ((dayValue > 31 || dayValue < 1) || (monthValue  > 12 || monthValue < 1) || (yearValue < 1900 || yearValue > 2024 )) {
                 displayDay.innerHTML = '--';
                 displayMonth.innerHTML = '--';
                 displayYear.innerHTML = '--';
