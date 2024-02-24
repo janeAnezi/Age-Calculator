@@ -725,10 +725,6 @@ video {
   padding-left: 1.25rem;
 }
 
-.pr-24 {
-  padding-right: 6rem;
-}
-
 .text-left {
   text-align: left;
 }
@@ -778,6 +774,7 @@ video {
 
 .small-text{
   font-size: 6px;
+  font-weight: bold;
   color: red;
   font-style: italic;
   margin-top: 3px;
@@ -798,8 +795,8 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:right-\[-20\%\] {
-    right: -20%;
+  .sm\:right-\[5\%\] {
+    right: 5%;
   }
 
   .sm\:mx-9 {
