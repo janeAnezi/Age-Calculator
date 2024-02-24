@@ -21,6 +21,9 @@ module.exports = {
         'lg': '1024px', // Custom large screen size
         'xl': '1280px', // Custom extra-large screen size
       },
+      colors: {
+        'purple-ish': '#9568E5'
+      },
     },
     textMode: 'media',
   },
