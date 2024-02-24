@@ -110,7 +110,7 @@ showDate.addEventListener('click', (e)=> {
                 displayYear.innerHTML = '--';
                 isValidDate=false;   
             } else {
-                 // Store age in local storage
+                // Store age in local storage
                 localStorage.setItem('Guest', JSON.stringify({ years, months, days }));
             } 
     }
