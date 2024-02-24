@@ -93,9 +93,10 @@ showDate.addEventListener('click', (e)=> {
             // Input is empty
             errorYear.innerHTML = "This field is required";
             displayError(year, yearLabel);
-        } else if (yearValue >= 1900 && yearValue < 2025) {
+        } else if (yearValue >= 1900 && yearValue <= 2024) {
             displayYear.innerHTML = years.valueOf(years);
             errorYear.innerHTML = '';
+            clearError(year, yearLabel);
         } else {
             errorYear.innerHTML = "must be a valid year";
            displayError(year, yearLabel);
@@ -114,9 +115,6 @@ showDate.addEventListener('click', (e)=> {
                 localStorage.setItem('Guest', JSON.stringify({ years, months, days }));
             } 
     }
-
-
-   
 
 })
 

@@ -10,8 +10,6 @@ module.exports = {
       'serif': ['ui-serif', 'Georgia'],
       'mono': ['ui-monospace', 'SFMono-Regular'],
       'poppins': ['Poppins', 'sans-serif'],
-      'display': ['Oswald'],
-      'body': ['"poppins"'],
     },
 
     extend: {
@@ -23,6 +21,9 @@ module.exports = {
       },
       colors: {
         'purple-ish': '#9568E5'
+      },
+      letterSpacing: {
+        widest: '.25em',
       },
     },
     textMode: 'media',
