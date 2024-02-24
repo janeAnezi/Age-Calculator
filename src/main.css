@@ -556,36 +556,12 @@ video {
   top: -0.25rem;
 }
 
-.right-\[35\%\] {
-  right: 35%;
-}
-
-.top-40 {
-  top: 10rem;
-}
-
-.top-20 {
-  top: 5rem;
-}
-
-.right-\[30\%\] {
-  right: 30%;
-}
-
-.right-\[25\%\] {
-  right: 25%;
-}
-
-.right-\[20\%\] {
-  right: 20%;
+.right-16 {
+  right: 4rem;
 }
 
 .top-16 {
   top: 4rem;
-}
-
-.right-16 {
-  right: 4rem;
 }
 
 .my-7 {
@@ -637,8 +613,8 @@ video {
   width: 0.75rem;
 }
 
-.w-7 {
-  width: 1.75rem;
+.w-6 {
+  width: 1.5rem;
 }
 
 .w-96 {
@@ -710,9 +686,9 @@ video {
   border-color: rgb(239 68 68 / var(--tw-border-opacity));
 }
 
-.bg-purple-600 {
+.bg-purple-500 {
   --tw-bg-opacity: 1;
-  background-color: rgb(147 51 234 / var(--tw-bg-opacity));
+  background-color: rgb(168 85 247 / var(--tw-bg-opacity));
 }
 
 .bg-slate-100 {
@@ -748,6 +724,10 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.pl-3 {
+  padding-left: 0.75rem;
+}
+
 .pl-5 {
   padding-left: 1.25rem;
 }
@@ -769,9 +749,8 @@ video {
   line-height: 1;
 }
 
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
+.text-\[9px\] {
+  font-size: 9px;
 }
 
 .font-bold {
@@ -780,6 +759,16 @@ video {
 
 .italic {
   font-style: italic;
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
 .text-gray-500 {
@@ -797,19 +786,14 @@ video {
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
 .light-mode {
   background-color: #4f3b3b;
-  color: #000000;
+  color: #000000
 }
 
 .dark-mode {
-  background-image: linear-gradient(rgb(57, 54, 54), grey, rgb(81, 72, 72));
-  color: #171616;
+  background-color: black;
+  color: #171616
 }
 
 .placeholder\:font-bold::-moz-placeholder {
@@ -828,30 +812,6 @@ video {
 @media (min-width: 375px) {
   .sm\:right-\[35\%\] {
     right: 35%;
-  }
-
-  .sm\:right-\[25\%\] {
-    right: 25%;
-  }
-
-  .sm\:right-\[15\%\] {
-    right: 15%;
-  }
-
-  .sm\:right-\[20\%\] {
-    right: 20%;
-  }
-
-  .sm\:top-32 {
-    top: 8rem;
-  }
-
-  .sm\:top-28 {
-    top: 7rem;
-  }
-
-  .sm\:right-\[18\%\] {
-    right: 18%;
   }
 
   .sm\:mx-9 {
@@ -884,3 +844,5 @@ video {
     background-color: rgb(203 213 225 / var(--tw-bg-opacity));
   }
 }
+
+ 

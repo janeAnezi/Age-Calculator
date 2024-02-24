@@ -56,7 +56,9 @@ showDate.addEventListener('click', (e)=> {
 
 
      // Check if day, month, and year are valid
+
     {
+        //for day
         if(day.value.trim() === '') {
             // Input is empty
             errorDay.innerHTML = "This field is required";
@@ -71,7 +73,7 @@ showDate.addEventListener('click', (e)=> {
         }
     }
     {
-        // 
+        // for month
         if(month.value.trim() === '') {
             // Input is empty
             errorMonth.innerHTML = "This field is required";
@@ -91,7 +93,7 @@ showDate.addEventListener('click', (e)=> {
             // Input is empty
             errorYear.innerHTML = "This field is required";
             displayError(year, yearLabel);
-        } else if (yearValue >= 1900 && yearValue <= 2025) {
+        } else if (yearValue >= 1900 && yearValue < 2025) {
             displayYear.innerHTML = years.valueOf(years);
             errorYear.innerHTML = '';
         } else {
@@ -99,19 +101,22 @@ showDate.addEventListener('click', (e)=> {
            displayError(year, yearLabel);
         }
     }
-    let isValid = "20";
-    if(dayValue === isValid && monthValue === isValid && yearValue === isValid) {
-        let age = {'years': years.valueOf(years), 'months': months.valueOf(days), 'days': days.valueOf(days)};
-        console.log(age);
-        localStorage.setItem('Guest', age);
+
+    let isValidDate = true;
+    if (!isNaN(yearValue) && !isNaN(dayValue) && !isNaN(monthValue)){
+            if ((dayValue > 31 || dayValue < 1) || (monthValue  > 12 || monthValue < 1)) {
+                displayDay.innerHTML = '--';
+                displayMonth.innerHTML = '--';
+                displayYear.innerHTML = '--';
+                isValidDate=false;   
+            } else {
+                 // Store age in local storage
+                localStorage.setItem('Guest', JSON.stringify({ years, months, days }));
+            } 
     }
 
-    
 
-    // to be removed
-    //  day.value = ''; // to clear the value in the input box
-    //  month.value = ''; 
-    //  year.value = ''; 
+   
 
 })
 

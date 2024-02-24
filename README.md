@@ -56,16 +56,13 @@ Users should be able to:
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
 ```
 ```css
-tailwind css animation animate (jane)
-placeholder styling placeholder:font-bold (jane)
+tailwind css animation animate
+placeholder styling placeholder:font-bold
 
 customising css theme
 exports.theme: {
@@ -79,6 +76,9 @@ exports.theme: {
 how to Convert milliseconds to years, months, and days
     Math.floor(dateDifference / (365.25 * 24 * 60 * 60 * 1000));
 ```
+* storing data in the local storage
+* writing condition statements 
+* function declaration vs function expressions
 
 
 
